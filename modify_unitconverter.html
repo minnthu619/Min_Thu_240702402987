@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circle Area Calculator</title>
+  <link rel="stylesheet" href="modify_unitconverter_style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="heading">
+      <h1>Circle Area Calculator</h1>
+      <h2 class="formula">A = π × r²</h2>
+    </div>
+    <form id="areaForm" class="card-bottom">
+      <div class="input-row">
+        <input
+          type="number"
+          id="radiusInput"
+          placeholder="Enter radius in Centimeter(cm)"
+          step="any"
+        />
+        <button type="submit" class="button">Calculate</button>
+        <button type="button" id="backButton" class="button back-button">Back</button>
+      </div>
+    </form>
+    <p id="result"></p>
+  </div>
+  <script src="modify_unitconverter_script.js"></script>
+</body>
+</html>

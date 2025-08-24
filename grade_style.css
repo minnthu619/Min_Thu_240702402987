@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 60px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #1e90ff;
+  text-align: center;
+  width: 550px;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.inline-label {
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.input-group input[type="number"] {
+  flex: 2;
+  height: 40px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.input-group input[type="number"]:focus {
+  border-color: #8ec5fc;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-group button {
+  flex-shrink: 0;
+  padding: 10px 24px;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #1c86ee;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
